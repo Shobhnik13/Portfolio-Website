@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between md:justify-center lg:justify-between w-full h-20 text-white fixed px-4'>
         <div>
-
+    {/* <h1>shobhnik</h1> */}
         </div>
 
         <ul className='hidden md:flex'>
