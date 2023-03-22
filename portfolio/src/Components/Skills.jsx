@@ -6,7 +6,7 @@ import tailwind from '../assets/tailwind.png'
 import javascript from '../assets/javascript.png'
 import react from '../assets/react.png'
 import node from '../assets/node.png'
-import solidity from '../assets/Solidity.png'
+import solidity from '../assets/solidity.png'
 import firebase from '../assets/firebase.png'
 
 const Skills = () => {
