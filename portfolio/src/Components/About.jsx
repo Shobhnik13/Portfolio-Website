@@ -7,12 +7,13 @@ const About = () => {
         <div className='pb-2'>
             <p className='text-4xl font-bold border-b-8 border-fuchsia-400 inline'>About</p>
         </div>
-        <p className='text-xl mt-10'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate totam explicabo corporis possimus soluta non necessitatibus dolores earum omnis tempora.
+        <p className='text-xl mt-10 text-gray-500'>
+        Hi there! My name is Shobhnik and I'm a second year undergraduate student studying Btech in IT at Maharaja Agrasen Institute of Technology. Alongside my academic pursuits, I've been honing my skills as a frontend developer for the past 6 months.
+        I'm passionate about creating visually stunning and user-friendly interfaces that enhance the user experience.
         </p>
         
-        <p className='text-xl mt-8'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore exercitationem harum veniam, ducimus dolor sed cum suscipit! Veniam, harum a.
+        <p className='text-xl mt-8 text-gray-500'>
+        Recently, I've been expanding my skill set to include backend development. I believe that having a strong understanding of both frontend and backend technologies will make me a more well-rounded and versatile developer.
         </p>
         </div>
     </div>
