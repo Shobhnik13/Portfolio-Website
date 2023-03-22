@@ -25,7 +25,7 @@ const Navbar = () => {
         },
     ]
   return (
-    <div className='flex items-center justify-between md:justify-center lg:justify-between w-full h-20 text-white fixed px-4'>
+    <div className='flex items-center bg-gradient-to-r from-gray-800 to-black justify-between md:justify-center lg:justify-between w-full h-20 text-white fixed px-4'>
         <div>
     {/* <h1>shobhnik</h1> */}
         </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
         {
             links.map((item)=>{
                 return(
-                    <li key={item.id} className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200'>{item.link}</li>
+                    <li key={item.id} className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>{item.link}</li>
                 )
             })
         }

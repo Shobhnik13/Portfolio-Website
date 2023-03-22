@@ -8,7 +8,7 @@ const Socials = () => {
     <li className='flex justify-between items-center  w-[220px] h-[60px] px-4 ml-[-160px]  hover:ml-[-10px]  duration-300  bg-blue-600'>
         <a target='_blank' 
         className='flex justify-between items-center gap-x-2 w-full text-gray-400'
-         href="">
+         href="https://www.linkedin.com/in/shobhnik-wadhwa-9986b6203/">
         LinkedIn <FaLinkedin size={30}/>
         </a>
     </li>
@@ -16,22 +16,15 @@ const Socials = () => {
     <li className='flex justify-between items-center w-[220px] h-[60px] px-4 ml-[-160px]  hover:ml-[-10px]  duration-300  bg-gray-700'>
         <a target='_blank' 
         className='flex justify-between items-center gap-x-2 w-full text-gray-400' 
-        href="">
+        href="https://github.com/Shobhnik13">
             Github <FaGithub size={30}/>
             </a>
          </li>
 
-    <li className='flex justify-between items-center w-[220px] h-[60px] px-4 ml-[-160px]  hover:ml-[-10px]  duration-300  bg-red-500'>
-        <a target='_blank' 
-        className='flex justify-between items-center gap-x-2 w-full text-gray-400' 
-        href="">Gmail <MdOutlineMail size={30}/>
-        </a>
-    </li>
-
     <li className='flex justify-between items-center w-[220px] h-[60px] px-4 ml-[-160px]  hover:ml-[-10px]  duration-300  bg-blue-600'>
         <a target='_blank' 
         className='flex justify-between items-center gap-x-2 w-full text-gray-400' 
-        href="">Twitter <FaTwitter size={30}/>
+        href="https://twitter.com/Shobhnik__13">Twitter <FaTwitter size={30}/>
         </a>
     </li>
    </ul>
