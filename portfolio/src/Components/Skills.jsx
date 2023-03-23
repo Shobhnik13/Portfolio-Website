@@ -54,7 +54,7 @@ const Skills = () => {
     ]
   return (
     
-    <div name='skills' className='orange w-full h-screen bg-gradient-to-b from-gray-800 to-black'>
+    <div name='skills' className='orange w-full h-screen bg-gradient-to-b from-black to-gray-800'>
       <div className='p-8 w-full h-full max-w-screen-lg mx-auto'>
         <div>
             <p className='text-4xl md:text-6xl font-bold text-white border-b-8 border-fuchsia-400 inline'>Skills</p>

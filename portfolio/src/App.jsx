@@ -5,6 +5,7 @@ import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import Skills from './Components/Skills'
 import Socials from './Components/Socials'
+import Work from './Components/Work'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <Socials/>
       <About/>
       <Skills/>
+      <Work/>
     </div>
   )
 }
