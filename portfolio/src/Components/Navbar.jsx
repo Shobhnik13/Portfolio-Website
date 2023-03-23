@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {FaBars,FaTimes} from 'react-icons/fa'
+import {Link} from 'react-scroll'
 const Navbar = () => {
     const [nav,setNav]=useState(false);
     const links=[
@@ -25,7 +26,7 @@ const Navbar = () => {
         },
     ]
   return (
-    <div className='flex items-center bg-gradient-to-r from-gray-800 to-black justify-between md:justify-center lg:justify-between w-full h-20 text-white fixed px-4'>
+    <div className='flex z-10 items-center bg-gradient-to-r from-gray-800 to-black justify-between md:justify-center lg:justify-between w-full h-20 text-white fixed px-4'>
         <div>
     {/* <h1>shobhnik</h1> */}
         </div>
@@ -34,12 +35,14 @@ const Navbar = () => {
         {
             links.map((item)=>{
                 return(
-                    <li key={item.id} className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>{item.link}</li>
+                    <li key={item.id} className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
+                        <Link to={item.link} smooth activeClass='active' duration={500}>{item.link}</Link>
+                        </li>
                 )
             })
         }
         </ul>
-        <div onClick={()=>setNav(!nav)} className='md:hidden cursor-pointer pr-4c z-10 text-gray-500'>
+        <div onClick={()=>setNav(!nav)} className='md:hidden pr-4 cursor-pointer pr-4c z-10 text-gray-500'>
             {
                 nav?<FaTimes size={30}/>:<FaBars size={30} />
             }
@@ -49,7 +52,7 @@ const Navbar = () => {
         {
             links.map((item)=>{
                 return(
-                    <li key={item.id} className='px-4 cursor-pointer capitalize py-6 text-4xl'>{item.link}</li>
+                    <li key={item.id} className='px-4 z-100 cursor-pointer capitalize py-6 text-4xl'><Link to={item.link} onClick={()=>setNav(!nav)} smooth duration={500}>{item.link}</Link></li>
                 )
             })
         }

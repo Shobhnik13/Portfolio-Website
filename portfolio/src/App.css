@@ -32,7 +32,7 @@ img{
 .image-slider-track{
     display: flex;
     width:calc(200px*12);
-    animation: play 13s linear infinite;
+    animation: play 20s linear infinite;
 }
 
 @keyframes play{

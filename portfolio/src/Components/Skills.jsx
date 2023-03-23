@@ -8,6 +8,9 @@ import react from '../assets/react.png'
 import node from '../assets/node.png'
 import solidity from '../assets/solidity.png'
 import firebase from '../assets/firebase.png'
+import c from '../assets/c.png'
+import cpp from '../assets/cpp.png'
+import java from '../assets/java.png'
 
 const Skills = () => {
     const data=[
@@ -54,7 +57,7 @@ const Skills = () => {
     ]
   return (
     
-    <div name='skills' className='orange w-full h-screen bg-gradient-to-b from-black to-gray-800'>
+    <div name='Skills' className='orange w-full h-screen bg-gradient-to-b from-black to-gray-800'>
       <div className='p-8 w-full h-full max-w-screen-lg mx-auto'>
         <div>
             <p className='text-4xl md:text-6xl font-bold text-white border-b-8 border-fuchsia-400 inline'>Skills</p>
@@ -98,6 +101,18 @@ const Skills = () => {
             <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-yellow-500'>
                <img src={firebase} alt="" className='m-auto' />
                <p className='text-gray-400 font-semibold  text-center'>Firebase</p>
+            </div>
+            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-blue-500'>
+               <img src={c} alt="" className='m-auto w-[200px]'  />
+               <p className='text-gray-400 font-semibold  text-center'>C</p>
+            </div>
+            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-blue-500'>
+               <img src={cpp} alt="" className='m-auto w-[200px]' />
+               <p className='text-gray-400 font-semibold  text-center'>C++</p>
+            </div>
+            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-red-500'>
+               <img src={java} alt="" className='m-auto w-[200px]' />
+               <p className='text-gray-400 font-semibold  text-center'>Java</p>
             </div>
         </div>
     </div>
