@@ -42,8 +42,8 @@ const Work = () => {
   return (
     <div name='Work' className='bg-gradient-to-b from-black to-gray-800 w-full text-white '>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col  justify-center w-full h-full'>
-            <div className='md:mt-32'>
-                <p className='text-4xl md:text-6xl border-b-8 font-bold border-fuchsia-400 inline '>My Work</p>
+            <div className='md:mt-32 mt-52'>
+                <p className=' text-4xl md:text-6xl border-b-8 font-bold border-fuchsia-400 inline '>My Work</p>
                 <p className='text-3xl py-6 md:text-5xl font-semibold text-gray-500'>Check out some of my work below</p>
             </div>
 
