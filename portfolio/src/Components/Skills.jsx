@@ -103,8 +103,8 @@ const Skills = () => {
     
     <div name='Skills' className='orange w-full h-auto bg-gradient-to-b from-black to-gray-800 '>
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div>
-          <p className="text-4xl sm:pt-10 font-bold border-b-8 border-fuchsia-400 p-2 inline">
+        <div className='mt-52 md:mt-0'>
+          <p className=" text-4xl sm:pt-10 font-bold border-b-8 border-fuchsia-400 p-2 inline">
             Experience
           </p>
           <p className="py-6 text-gray-400">These are the tech I've worked with</p>
