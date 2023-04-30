@@ -11,7 +11,8 @@ import firebase from '../assets/firebase.png'
 import c from '../assets/c.png'
 import cpp from '../assets/cpp.png'
 import java from '../assets/java.png'
-
+import express from '../assets/express.png'
+import mongo from '../assets/mongo.png'
 const Skills = () => {
     const data=[
         {
@@ -54,6 +55,11 @@ const Skills = () => {
             imgSrc:solidity,
             text:'Solidity',
         },
+        {
+         id:9,
+         imgSrc:express,
+         text:'Express.js'
+        }
     ]
   return (
     
@@ -94,13 +100,21 @@ const Skills = () => {
                <img src={node} alt="" className='m-auto' />
                <p className='text-gray-400 font-semibold text-center '>Node.js</p>
             </div>
-            <div class="slide" className='p-4 ml-4  hover:scale-110 duration-100 shadow-md shadow-gray-800'>
-               <img src={solidity} alt="" className='w-[200px] m-auto'/>
-               <p className='text-gray-400 font-semibold  text-center '>Solidity</p>
+            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-gray-500'>
+               <img src={express} alt="" className='m-auto w-[300px] h-[80px]' />
+               <p className='text-gray-400 font-semibold  text-center mt-[30px]'>Express.js</p>
+            </div>
+            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-green-500'>
+               <img src={mongo} alt="" className='m-auto ' />
+               <p className='text-gray-400 font-semibold  text-center'>MongoDB</p>
             </div>
             <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-yellow-500'>
                <img src={firebase} alt="" className='m-auto' />
                <p className='text-gray-400 font-semibold  text-center'>Firebase</p>
+            </div>
+            <div class="slide" className='p-4 ml-4  hover:scale-110 duration-100 shadow-md shadow-gray-800'>
+               <img src={solidity} alt="" className='w-[200px] m-auto'/>
+               <p className='text-gray-400 font-semibold  text-center '>Solidity</p>
             </div>
             <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-blue-500'>
                <img src={c} alt="" className='m-auto w-[200px]'  />
@@ -114,6 +128,7 @@ const Skills = () => {
                <img src={java} alt="" className='m-auto w-[200px]' />
                <p className='text-gray-400 font-semibold  text-center'>Java</p>
             </div>
+            
         </div>
     </div>
     
