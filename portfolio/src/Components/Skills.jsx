@@ -14,126 +14,118 @@ import java from '../assets/java.png'
 import express from '../assets/express.png'
 import mongo from '../assets/mongo.png'
 const Skills = () => {
-    const data=[
+    const techs=[
         {
                 id:1,
                 imgSrc:html,
                 text:'HTML',
+                style: "shadow-orange-500",
         },
         {
             id:2,
             imgSrc:css,
             text:'CSS',
+            style: "shadow-blue-500",
         },
         {
             id:3,
             imgSrc:tailwind,
             text:'Tailwind',
+            style: "shadow-sky-400",
         },
         {
             id:4,
             imgSrc:javascript,
             text:'Javascript',
+            style: "shadow-yellow-500",
         },
         {
             id:5,
             imgSrc:react,
             text:'React.js',
+            style: "shadow-blue-600",
         },
         {
             id:6,
             imgSrc:github,
             text:'Github',
+            style: "shadow-gray-400",
         },
         {
             id:7,
             imgSrc:node,
             text:'Node.js',
+            style: "shadow-green-500",
         },
         {
             id:8,
             imgSrc:solidity,
             text:'Solidity',
+            style: "shadow-gray-400",
         },
         {
          id:9,
          imgSrc:express,
-         text:'Express.js'
+         text:'Express.js',
+         style: "shadow-gray-500 pt-12",
+        },
+        {
+         id:10,
+         imgSrc:mongo,
+         text:'MongoDB',
+         style: "shadow-green-500",
+        },
+        {
+         id:10,
+         imgSrc:c,
+         text:'C',
+         style: "shadow-blue-500",
+        },
+        {
+         id:10,
+         imgSrc:cpp,
+         text:'C++',
+         style: "shadow-blue-500 pt-2",
+        },
+        {
+         id:10,
+         imgSrc:java,
+         text:'Java',
+         style: "shadow-red-500",
         }
+        
+        
+        
+
+
     ]
   return (
     
-    <div name='Skills' className='orange w-full h-screen bg-gradient-to-b from-black to-gray-800'>
-      <div className='p-8 w-full h-full max-w-screen-lg mx-auto'>
+    <div name='Skills' className='orange w-full h-auto bg-gradient-to-b from-black to-gray-800 '>
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
-            <p className='text-4xl md:text-6xl font-bold text-white border-b-8 border-fuchsia-400 inline'>Skills</p>
-            <p className='text-3xl py-10 md:text-5xl font-semibold text-gray-500'>Tech I've worked with</p>
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+            Experience
+          </p>
+          <p className="py-6">These are the tech I've worked with</p>
         </div>
-{/* carousel  */}
-            <div class="image-slider">
-        <div class="image-slider-track" >
-            <div class="slide" className='shadow-md shadow-orange-400  ml-2 p-4 hover:scale-110 duration-100'>
-               <img src={html} alt="" className='m-auto'/>
-               <p className='text-gray-400 font-semibold text-center'>HTML</p>
+
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+          {techs.map(({ id, imgSrc, text, style }) => (
+            <div
+              key={id}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+            >
+              <img src={imgSrc} alt="" className="w-20 mx-auto" />
+              <p className="mt-4 text-gray-400 font-semibold">{text}</p>
             </div>
-            <div class="slide" className='shadow-md shadow-blue-500 ml-2 p-4 hover:scale-110 duration-100'>
-               <img src={css} alt="" className='m-auto'/>
-               <p className='text-gray-400 font-semibold text-center '>CSS</p>
-            </div>
-            <div class="slide" className=' p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-yellow-500'>
-               <img src={javascript} alt=""  className='m-auto'/>
-               <p className='text-gray-400 font-semibold text-center'>Javascript</p>
-            </div>
-            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-gray-800'>
-               <img src={github} alt="" className='m-auto' />
-               <p className='text-gray-400 font-semibold  text-center'>Github</p>
-            </div>
-            <div class="slide" className=' p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-blue-500'>
-               <img src={tailwind} alt="" className='m-auto'/>
-               <p className='text-gray-400 font-semibold  text-center'>Tailwind</p>
-            </div>
-            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-blue-500'>
-               <img src={react} alt="" className='m-auto' />
-               <p className='text-gray-400 font-semibold text-center'>React.js</p>
-            </div>
-            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-green-500'>
-               <img src={node} alt="" className='m-auto' />
-               <p className='text-gray-400 font-semibold text-center '>Node.js</p>
-            </div>
-            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-gray-500'>
-               <img src={express} alt="" className='m-auto w-[300px] h-[80px]' />
-               <p className='text-gray-400 font-semibold  text-center mt-[30px]'>Express.js</p>
-            </div>
-            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-green-500'>
-               <img src={mongo} alt="" className='m-auto ' />
-               <p className='text-gray-400 font-semibold  text-center'>MongoDB</p>
-            </div>
-            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-yellow-500'>
-               <img src={firebase} alt="" className='m-auto' />
-               <p className='text-gray-400 font-semibold  text-center'>Firebase</p>
-            </div>
-            <div class="slide" className='p-4 ml-4  hover:scale-110 duration-100 shadow-md shadow-gray-800'>
-               <img src={solidity} alt="" className='w-[200px] m-auto'/>
-               <p className='text-gray-400 font-semibold  text-center '>Solidity</p>
-            </div>
-            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-blue-500'>
-               <img src={c} alt="" className='m-auto w-[200px]'  />
-               <p className='text-gray-400 font-semibold  text-center'>C</p>
-            </div>
-            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-blue-500'>
-               <img src={cpp} alt="" className='m-auto w-[200px]' />
-               <p className='text-gray-400 font-semibold  text-center'>C++</p>
-            </div>
-            <div class="slide" className='p-4 ml-4 hover:scale-110 duration-100 shadow-md shadow-red-500'>
-               <img src={java} alt="" className='m-auto w-[200px]' />
-               <p className='text-gray-400 font-semibold  text-center'>Java</p>
-            </div>
-            
+          ))}
         </div>
+      </div>
+
     </div>
     
-    </div>
-    </div>
+    
   )
 }
 

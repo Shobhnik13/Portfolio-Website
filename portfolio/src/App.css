@@ -31,8 +31,8 @@ img{
 }
 .image-slider-track{
     display: flex;
-    width:calc(200px*12);
-    animation: play 20s linear infinite;
+    width:calc(200px*5);
+    animation: play 15s linear infinite;
 }
 
 @keyframes play{
