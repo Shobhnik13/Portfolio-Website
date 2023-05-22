@@ -9,7 +9,7 @@ const Navbar = () => {
             link:'Home',
         },
         {
-            id:3,
+            id:2,
             link:'About',
         },
         {
