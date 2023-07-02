@@ -14,7 +14,7 @@ const Home = () => {
                     that enhance the user engagement.
                 </p>
                 <button className=' text-blue-700 flex items-center text-md cursor-pointer border-none font-semibold max-w-[200px] px-2 md:max-w-[200px] rounded-xl  justify-center py-1 my-4 hover:scale-125 duration-200'>
-                    <a target='_blank' href="https://drive.google.com/file/d/13J8ZQakMui8DWUZVcpeCXBvQjCtq3BdA/view?usp=sharing">Resume</a>
+                    <a target='_blank' href="https://drive.google.com/file/d/1CktLr-DqN12WPwADd6XeK1BFj0cqO44v/view?usp=sharing">Resume</a>
                     <span><a target='_blank' href="https://drive.google.com/file/d/13J8ZQakMui8DWUZVcpeCXBvQjCtq3BdA/view?usp=sharing"><AiOutlineLink size={40} className='ml-2'/></a></span>
                 </button>
             </div>
